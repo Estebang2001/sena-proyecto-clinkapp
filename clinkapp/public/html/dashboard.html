@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style-dashboard.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
+                class="bi bi-circle-square" viewBox="0 0 16 16">
+                <path d="M0 6a6 6 0 1 1 12 0A6 6 0 0 1 0 6" />
+                <path
+                    d="M12.93 5h1.57a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1.57a7 7 0 0 1-1-.22v1.79A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 4h-1.79q.145.486.22 1" />
+            </svg></div>
+        <div> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
+                class="bi bi-calendar-week" viewBox="0 0 16 16">
+                <path
+                    d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+            </svg></div>
+        <div> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-alarm"
+                viewBox="0 0 16 16">
+                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9z" />
+                <path
+                    d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1zm1.038 3.018a6 6 0 0 1 .924 0 6 6 0 1 1-.924 0M0 3.5c0 .753.333 1.429.86 1.887A8.04 8.04 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5M13.5 1c-.753 0-1.429.333-1.887.86a8.04 8.04 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1" />
+            </svg></div>
+        <div> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-gear"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                <path
+                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+            </svg></div>
+        
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="barra-busqueda">
+                <input class="barra form-control" type="search" placeholder="Buscar..." aria-label="Buscar">
+                <button class="boton-buscar btn btn-outline-primary" type="submit">Buscar</button>
+            </div>
+            <div class="auxiliares">
+                <div class="mensajes">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                        class="bi bi-chat" viewBox="0 0 16 16">
+                        <path
+                            d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105" />
+                    </svg>
+                </div>
+                <div class="notificaciones">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                        class="bi bi-bell" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+                    </svg>
+                </div>
+                <div class="perfil">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                        class="bi bi-person-vcard" viewBox="0 0 16 16">
+                        <path
+                            d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
+                        <path
+                            d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div>
+                <h2>Buenos días</h2>
+                <h2 class="usuario">Martha!</h2>
+            </div>
+            <div class="visitas">
+                <p>Visitas de hoy</p><br>
+                <h3>104</h3>
+            </div>
+
+            <div class="imagen-perfil"><img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/048/719/246/small/female-hold-clipboard-realistic-free-png.png"
+                    alt=""></div>
+        </div>
+        <div class="funciones">
+            <div class="lista-pacientes">
+                <div class="pacientes-header d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="fw-bold mb-0">Lista de pacientes</h2>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="fw-normal text-secondary">Hoy</span>
+                        <span class="dropdown-toggle"></span>
+                    </div>
+                </div>
+                <div class="buscador-paciente mb-3">
+                    <input type="search" class="form-control paciente-search" placeholder="Buscar Paciente"
+                        aria-label="Buscar Paciente">
+                </div>
+                <ul class="pacientes-lista list-unstyled mb-0">
+                    <li class="paciente-item d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="paciente-avatar paciente-avatar-rosa">SM</span>
+                            <div>
+                                <span class="fw-bold paciente-nombre">Sebastian Martinez</span><br>
+                                <span class="paciente-detalle text-pink">Visita Semanal</span>
+                            </div>
+                        </div>
+                        <span class="paciente-hora paciente-hora-rosa">9 : 15 AM</span>
+                    </li>
+                    <li class="paciente-item d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="paciente-avatar paciente-avatar-azul">AD</span>
+                            <div>
+                                <span class="fw-bold paciente-nombre">Andres Diaz</span><br>
+                                <span class="paciente-detalle text-blue">Chequeo de rutina</span>
+                            </div>
+                        </div>
+                        <span class="paciente-hora paciente-hora-azul">9 : 30 AM</span>
+                    </li>
+                    <li class="paciente-item d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="paciente-avatar paciente-avatar-verde">DJ</span>
+                            <div>
+                                <span class="fw-bold paciente-nombre">Diego Jurado</span><br>
+                                <span class="paciente-detalle text-green">Reporte</span>
+                            </div>
+                        </div>
+                        <span class="paciente-hora paciente-hora-verde">9 : 50 AM</span>
+                    </li>
+                    <li class="paciente-item d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="paciente-avatar paciente-avatar-rosa">SM</span>
+                            <div>
+                                <span class="fw-bold paciente-nombre">Sebastian Martinez</span><br>
+                                <span class="paciente-detalle text-pink">Visita Semanal</span>
+                            </div>
+                        </div>
+                        <span class="paciente-hora paciente-hora-rosa">10 : 15 AM</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="consulta">
+                <h2>Consulta</h2>
+
+                <div class="paciente-info">
+                    <span class="paciente-avatar paciente-avatar-verde">DJ</span>
+                    <p>Daniel García</p>
+                    <p>Hombre - 28 Años 3 Meses</p>
+                </div>
+
+                <div class="sintomas">
+                    <h3>Fiebre</h3>
+                    <p>Tos</p>
+                    <p>Acidez</p>
+                </div>
+
+                <div class="ultimo-chequeo">
+                    <h3>Último Chequeo</h3>
+                    <p>Dr Eduardo el 21 Abril 2021 Prescripción #2J983KT0</p>
+                </div>
+
+                <div class="observacion">
+                    <h3>Observación</h3>
+                    <p>Fiebre alta y tos con niveles normales de hemoglobina.</p>
+                </div>
+
+                <div class="prescripcion">
+                    <h3>Prescripción</h3>
+                    <ul>
+                        <li>Acetaminofen - 2 veces al día</li>
+                        <li>Diazepam - Día y Noche antes de las comidas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="agregar-empleado">
+                <h2 class="fw-bold mb-3">Agregar Empleado</h2>
+                <div class="empleado-card p-3"
+                    style="border:1px solid #b2dfdb; border-radius:1rem; background:#fff; position:relative;">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="paciente-avatar paciente-avatar-verde">N/A</span>
+                            <div>
+                                <span class="fw-bold" style="font-size:1.1rem;">Nombre y apellido</span><br>
+                                <span class="text-secondary" style="font-size:0.95rem;">Genero &nbsp; - &nbsp;
+                                    Edad</span>
+                            </div>
+                        </div>
+                        <span style="color:#bbb; font-size:1.5rem; cursor:pointer;">&#8942;</span>
+                    </div>
+                    <div class="text-center mb-2">
+                        <span style="font-size:1.2rem; color:#888;">&#8964;</span>
+                    </div>
+                    <hr style="margin:0.5rem 0 1rem 0; border-top:2px solid #e0f2f1;">
+                    <div class="row mb-2">
+                        <div class="col-6 text-start" style="font-size:0.98rem;">
+                            <div class="fw-bold mb-2">Fecha y hora de ingreso</div>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-light text-primary"
+                                    style="font-size:1rem; padding:0.5rem 1rem; border-radius:0.7rem; font-weight:500;">Jun
+                                    10, 2024</span>
+                                <span class="badge bg-light text-primary"
+                                    style="font-size:1rem; padding:0.5rem 1rem; border-radius:0.7rem; font-weight:500;">9:41
+                                    AM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-6 text-start" style="font-size:0.98rem;">
+                            <div class="fw-bold">Numero de documento</div>
+                            <div>CC 000000000 <span style="font-size:1rem; color:#888;">&#9660;</span></div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-6 text-start" style="font-size:0.98rem;">
+                            <div class="fw-bold">Aseguradora</div>
+                            <div>Nueva EPS <span style="font-size:1rem; color:#888;">&#9660;</span></div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-6 text-start" style="font-size:0.98rem;">
+                            <div class="fw-bold">Ocupacion</div>
+                            <div class="text-secondary">9629 - Otras ocupaciones</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 text-start" style="font-size:0.98rem;">
+                            <div class="fw-bold">Rango</div>
+                            <div class="text-secondary">Enfermero</div>
+                        </div>
+                    </div>
+                    <!-- Botón de agregar (esquina inferior derecha) -->
+                    <span
+                        style="position:absolute; right:1rem; bottom:-2.2rem; background:#fff; border:2px solid #222; border-radius:50%; width:48px; height:48px; display:flex; align-items:center; justify-content:center; font-size:2rem; color:#222;">
+                        <span style="font-size:2.2rem;">&#43;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

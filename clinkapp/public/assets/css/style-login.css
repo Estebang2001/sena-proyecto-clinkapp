@@ -1,0 +1,81 @@
+body,
+html {
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #ffffff 0%, #B2E6FD 25%, #9BD8F1 50%, #9686ff 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.0);
+    border-radius: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
+    width: 100%;
+    max-width: 430px;
+    box-shadow: none;
+    text-align: center;
+}
+
+.login-logo {
+    width: 120px;
+    margin-bottom: 1.5rem;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    border-radius: 2rem;
+    background: #D9D9D9;
+    border: none;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.form-control::placeholder {
+    text-align: center;
+    color: #444;
+    opacity: 1;
+}
+
+.btn-login {
+    border-radius: 2rem;
+    width: 50%;
+    font-weight: 500;
+    padding: 0.7rem 0;
+    background: #fff;
+    color: #222;
+    border: none;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+}
+
+.btn-login:hover {
+    background: #1976d2;
+    color: #fff;
+}
+
+.register-link {
+    color: #888;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+
+
+   
+}

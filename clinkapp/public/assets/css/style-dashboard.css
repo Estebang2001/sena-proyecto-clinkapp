@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    background-color: #3E36B0;
+}
+
+.sidebar {
+    display: flex;
+    width: 10vw;
+    min-width: 10px;
+    background: #3E36B0;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.content {
+    flex: 1;
+    background: #fff;
+    height: 100vh;
+    overflow: auto;
+    border-top-left-radius: 61px;
+    border-bottom-left-radius: 61px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.auxiliares {
+    display: flex;
+    flex: 1;
+    width: 40vw;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.barra-busqueda {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.barra {
+    width: 60vw;
+    border-radius: 61px;
+}
+
+.boton-buscar {
+    border-radius: 61px;
+    width: auto;
+    white-space: nowrap;
+}
+
+.mensajes {
+    margin-left: 2rem;
+
+}
+
+.notificaciones {
+    margin-left: 2rem;
+
+}
+
+.perfil {
+    margin-left: 2rem;
+
+}
+
+.main {
+    position: relative;
+    margin-top: 0px;
+}
+
+.main>div:first-child {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.usuario {
+    color: #3E36B0;
+    font-weight: bold;
+}
+
+.visitas {
+    background: linear-gradient(90deg, #B2E6FD 0%, #9BD8F1 39%, #9BD8F1 71%, #9686ff 100%);
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0rem;
+    border-radius: 21px;
+    padding: 1.4rem;
+}
+
+.visitas p,
+.visitas h3 {
+    margin: 0;
+    padding: 0.1rem;
+    border: 0.1rem;
+}
+
+.funciones {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: stretch
+}
+
+.lista-pacientes,
+.consulta,
+.agregar-empleado {
+    width: 27vw;
+    min-width: 150px;
+    padding: 1rem;
+    background-color: #3E36B0;
+    text-align: center;
+}
+
+/**/
+
+.lista-pacientes {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    min-width: 300px;
+    max-width: 100%;
+}
+
+.pacientes-header h2 {
+    font-size: 1.5rem;
+}
+
+.paciente-search {
+    background: #ededed;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+}
+
+.paciente-avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 2px solid;
+    background: #fff;
+}
+
+.paciente-avatar-rosa {
+    border-color: #f8bbd0;
+    color: #d81b60;
+}
+
+.paciente-avatar-azul {
+    border-color: #b3c6fc;
+    color: #3949ab;
+}
+
+.paciente-avatar-verde {
+    border-color: #b2dfdb;
+    color: #00897b;
+}
+
+.paciente-nombre {
+    font-size: 1.1rem;
+}
+
+.paciente-detalle.text-pink {
+    color: #d81b60;
+    font-size: 0.95rem;
+}
+
+.paciente-detalle.text-blue {
+    color: #3949ab;
+    font-size: 0.95rem;
+}
+
+.paciente-detalle.text-green {
+    color: #00897b;
+    font-size: 0.95rem;
+}
+
+.paciente-hora {
+    display: inline-block;
+    min-width: 70px;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.2rem 0.8rem;
+    background: #f8bbd0;
+    color: #d81b60;
+}
+
+.paciente-hora-rosa {
+    background: #f8bbd0;
+    color: #d81b60;
+}
+
+.paciente-hora-azul {
+    background: #b3c6fc;
+    color: #3949ab;
+}
+
+.paciente-hora-verde {
+    background: #b2dfdb;
+    color: #00897b;
+}
+
+/**/
+
+.consulta {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.consulta h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+.paciente-info {
+    background-color: #e8f4fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.paciente-info p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.sintomas {
+    margin-bottom: 20px;
+}
+
+.sintomas h3,
+.ultimo-chequeo h3,
+.observacion h3,
+.prescripcion h3 {
+
+    margin-bottom: 8px;
+}
+
+.ultimo-chequeo,
+.observacion,
+.prescripcion {
+    margin-bottom: 20px;
+}
+
+.prescripcion ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.prescripcion li {
+    background-color: #e8f4fc;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/**/
+
+.agregar-empleado {
+    width: 23vw;
+    min-width: 300px;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    margin-left: 2rem;
+}
+
+.paciente-avatar-verde {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 2px solid #b2dfdb;
+    color: #00897b;
+    background: #fff;
+}
+
+.imagen-perfil {
+    position: absolute;
+    top: 8px;
+    right: 60px;
+    width: 80px;
+    z-index: 10;
+}
